@@ -1,0 +1,310 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #333;
+    line-height: 1.7;
+}
+
+header {
+    background-color: #30204f;
+    color: white;
+    padding: 30px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    gap: 8px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 9px 16px;
+    border: 1px solid #f4a261;
+    border-radius: 20px;
+}
+
+nav a:hover {
+    background-color: #f4a261;
+    color: #30204f;
+}
+
+main {
+    width: 88%;
+    max-width: 1050px;
+    margin: 45px auto;
+}
+
+main h2 {
+    color: #30204f;
+    font-size: 25px;
+}
+
+.profile {
+    background-color: #30204f;
+    color: white;
+    text-align: center;
+    padding: 45px 30px;
+    border-radius: 18px;
+    margin-bottom: 30px;
+}
+
+.profile h2 {
+    color: #f4a261;
+    font-size: 32px;
+    margin-top: 0;
+}
+
+.profile p {
+    max-width: 700px;
+    margin: 15px auto;
+    font-size: 17px;
+}
+
+.profile img {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    background-color: white;
+    padding: 12px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-left: 6px solid #f4a261;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(48, 32, 79, 0.08);
+}
+
+section h2 {
+    margin-top: 0;
+    border-bottom: 2px solid #f4a261;
+    padding-bottom: 10px;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+table th {
+    background-color: #30204f;
+    color: white;
+    font-size: 15px;
+}
+
+table tr:nth-child(even) {
+    background-color: #fff3e6;
+}
+
+table tr:hover {
+    background-color: #ffe0c2;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 35px auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(48, 32, 79, 0.12);
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+label {
+    display: block;
+    color: #30204f;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    font-family: inherit;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #fffdfb;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #f4a261;
+    background-color: white;
+}
+
+.radio-group {
+    margin-top: 5px;
+}
+
+.radio-group input {
+    margin-right: 5px;
+}
+
+.radio-group label {
+    display: inline;
+    font-weight: normal;
+    margin-right: 20px;
+}
+
+.terms {
+    margin: 20px 0;
+}
+
+.terms label {
+    display: inline;
+    font-weight: normal;
+    color: #444;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #f4a261;
+    color: #30204f;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    font-family: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #30204f;
+    color: white;
+}
+
+.account-link {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.account-link a,
+main a {
+    color: #d66a1f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.account-link a:hover,
+main a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #30204f;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+hr {
+    display: none;
+}
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    .profile {
+        padding: 30px 20px;
+    }
+
+    .profile h2 {
+        font-size: 25px;
+    }
+
+    section {
+        padding: 22px;
+    }
+
+    .form-container {
+        padding: 25px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    table th,
+    table td {
+        padding: 9px;
+    }
+}
+
